@@ -1,7 +1,7 @@
 const dotenv = require("dotenv");
 const getInteractions = require("./data");
 const render = require("./image");
-const {getUser} = require("./api");
+const {getUser} = require("./twitter-api");
 const {renderText} = require("./text");
 const Twitter = require("twitter-lite");
 
