@@ -45,7 +45,7 @@ Make sure you don't have spaces.
 
 ## Modifications
 
-If you wish, you can replace the first part of the main loop in the `index.js` to use the getUser() function instead of getMe().
+If you wish, you can replace the first part of the main loop in the `main.js` to use the getUser() function instead of getMe().
 This will allow you to generate the circles for any public Twitter user. All the API methods used take advantage only of public data.
 
 ## Challenges
