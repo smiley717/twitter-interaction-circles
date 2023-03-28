@@ -1,4 +1,4 @@
-const {getTimeline, getLiked, getAvatars} = require("./api");
+const {getTimeline, getLiked, getAvatars} = require("./twitter-api");
 
 /**
  * A small function that records an interaction.

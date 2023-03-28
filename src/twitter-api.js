@@ -14,8 +14,7 @@ async function getTimelinePage(screen_name, page, max_id = null) {
 	};
 
 	console.log("Fetching Timeline page " + page);
-	const res = await globalThis.TwitterClient.get("statuses/user_timeline", params);
-	return res;
+	return await globalThis.TwitterClient.get("statuses/user_timeline", params);
 }
 
 /**
@@ -114,6 +113,7 @@ async function getUser(screen_name) {
 
 	return {
 		id: res.id_str,
+		name: res.name,
 		screen_name: res.screen_name,
 		avatar: res.profile_image_url_https.replace("normal", "400x400"),
 	};
